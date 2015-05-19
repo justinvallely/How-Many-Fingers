@@ -16,25 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many fingers am I holding up?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-9Y-gK7">
-                                <rect key="frame" x="24" y="28" width="272" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many fingers am I holding up?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-9Y-gK7">
+                                <rect key="frame" x="16" y="28" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nXR-F5-QU7"/>
+                                    <constraint firstAttribute="width" constant="288" id="sXP-bJ-4mm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQa-me-WLe">
-                                <rect key="frame" x="51" y="96" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQa-me-WLe">
+                                <rect key="frame" x="112" y="66" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="12s-ES-dNQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="ef1-ef-jKU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUh-hG-ZF3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUh-hG-ZF3">
                                 <rect key="frame" x="0.0" y="186" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="0pe-n7-irk"/>
+                                    <constraint firstAttribute="height" constant="21" id="3EL-f3-Oe7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zav-ht-7dH">
-                                <rect key="frame" x="191" y="96" width="44" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zav-ht-7dH">
+                                <rect key="frame" x="138" y="104" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="cbC-Cm-l6X"/>
+                                    <constraint firstAttribute="height" constant="30" id="ciV-tr-uzd"/>
+                                </constraints>
                                 <state key="normal" title="Guess">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -44,7 +60,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SyC-9Y-gK7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="JlW-go-MOt"/>
+                            <constraint firstAttribute="centerX" secondItem="Zav-ht-7dH" secondAttribute="centerX" id="KCc-fE-20w"/>
+                            <constraint firstItem="NUh-hG-ZF3" firstAttribute="top" secondItem="Zav-ht-7dH" secondAttribute="bottom" constant="52" id="MEf-Sm-raB"/>
+                            <constraint firstAttribute="centerX" secondItem="NUh-hG-ZF3" secondAttribute="centerX" id="PkE-vq-qkQ"/>
+                            <constraint firstItem="Zav-ht-7dH" firstAttribute="top" secondItem="kQa-me-WLe" secondAttribute="bottom" constant="8" id="VLf-pm-TnT"/>
+                            <constraint firstAttribute="centerX" secondItem="kQa-me-WLe" secondAttribute="centerX" id="kz3-O2-HkR"/>
+                            <constraint firstItem="kQa-me-WLe" firstAttribute="top" secondItem="SyC-9Y-gK7" secondAttribute="bottom" constant="17" id="nnU-sI-Rdh"/>
+                            <constraint firstAttribute="centerX" secondItem="SyC-9Y-gK7" secondAttribute="centerX" id="u0K-s7-EZb"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="OIy-3A-K99"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="answer" destination="NUh-hG-ZF3" id="syE-zO-3VO"/>

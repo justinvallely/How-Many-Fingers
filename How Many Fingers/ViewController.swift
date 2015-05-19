@@ -22,11 +22,13 @@ class ViewController: UIViewController {
         if guessInt != nil {
             if guessInt == randomNumber {
                 answer.text = "\(randomNumber), Nailed it!"
+            } else if guessInt > 5 {
+                answer.text = "Please enter a number 0-5."
             } else {
-                answer.text = "Sorry, the answer was \(randomNumber)"
+                answer.text = "Sorry, the answer was \(randomNumber)."
             }
         } else {
-            answer.text = "Please enter a number 0-5"
+            answer.text = "Please enter a number 0-5."
         }
     }
     
